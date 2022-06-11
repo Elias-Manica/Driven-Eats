@@ -85,6 +85,7 @@
     background-color: #eeeeee;
     display: flex;
     overflow-x: scroll;
+    position: relative;
   }
 
   .pedido {
@@ -95,6 +96,7 @@
     font-size: 70px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    position: relative;
   }
 
   .pedido > img {
@@ -171,7 +173,7 @@
     left: 0;
   }
 
-  .barraInf div {
+  .fecharPedido {
     width: 90%;
     height: 61px;
     background-color: #cbcbcb;
@@ -181,8 +183,15 @@
     align-items: center;
   }
 
-  .barraInf div p {
+  .fundoVerde {
+    background-color: #32b72f;
+  }
+
+  .fraseBotao {
+    display: flex;
+    align-items: center;
     text-align: center;
+    justify-content: center;
     color: #ffffff;
     width: 200px;
     height: 53px;
@@ -191,5 +200,18 @@
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.018em;
+  }
+
+  .icone {
+    position: absolute;
+    color: #32b72f;
+    bottom: 18px;
+    right: 10px;
+    width: 19px;
+    height: 19px;
+  }
+
+  .oculto {
+    display: none;
   }
 }

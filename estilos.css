@@ -1,169 +1,195 @@
-* {
-  box-sizing: border-box;
-}
+@media (max-width: 614px) {
+  * {
+    box-sizing: border-box;
+  }
 
-body {
-  background-color: #eeeeee;
-}
+  body {
+    background-color: #eeeeee;
+  }
 
-.topo {
-  width: 100%;
-  height: 92px;
-  background-color: #cf2b2b;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
+  .topo {
+    width: 100%;
+    height: 92px;
+    background-color: #cf2b2b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
 
-.topo h1 {
-  height: 44px;
-  font-size: 44px;
-  font-family: "Righteous", cursive;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 55px;
-  letter-spacing: -0.012em;
-  color: #ffffff;
-  padding-left: 21px;
-  padding-top: 15px;
-}
+  .topo h1 {
+    height: 44px;
+    font-size: 44px;
+    font-family: "Righteous", cursive;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #ffffff;
+    padding-left: 21px;
+    padding-top: 15px;
+  }
 
-.topo h2 {
-  height: 17px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  padding-left: 21px;
-  padding-top: 20px;
-}
+  .topo h2 {
+    height: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    padding-left: 21px;
+    padding-top: 20px;
+  }
 
-.corpo {
-  background-color: #eeeeee;
-  margin-top: 92px;
-  margin-bottom: 120px;
-  position: relative;
-}
+  .corpo {
+    background-color: #eeeeee;
+    margin-top: 92px;
+    margin-bottom: 120px;
+    position: relative;
+  }
 
-.corpo h1 {
-  width: 350px;
-  height: 25px;
-  margin-top: 123px;
-  font-family: "Righteous";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 32px;
-  letter-spacing: 0.018em;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  color: #333333;
-}
+  .corpo h1 {
+    width: 100%;
+    height: 25px;
+    margin-top: 123px;
+    font-family: "Righteous";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: #333333;
+  }
 
-.scroll {
-  margin-top: 20px;
-  margin-left: 20px;
-  background-color: #eeeeee;
-  display: flex;
-  overflow-x: scroll;
-}
+  .corpo h2 {
+    width: 100%;
+    height: 25px;
+    margin-top: 123px;
+    font-family: "Righteous";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: #333333;
+  }
 
-.pedido {
-  background-color: #ffffff;
-  width: 172px;
-  height: 216px;
-  margin-right: 30px;
-  font-size: 70px;
-  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
-}
+  .scroll {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #eeeeee;
+    display: flex;
+    overflow-x: scroll;
+  }
 
-.pedido > img {
-  height: 87px;
-  width: 144px;
-  margin-top: 18px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 4px;
-}
+  .pedido {
+    background-color: #ffffff;
+    width: 172px;
+    height: 216px;
+    margin-right: 30px;
+    font-size: 70px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+  }
 
-.pedido > h3 {
-  font-size: 16px;
-  margin-left: 10px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  line-height: 19px;
-  color: #333333;
-}
+  .pedido > img {
+    height: 87px;
+    width: 144px;
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
 
-.pedido > p {
-  margin-left: 10px;
-  margin-top: 4px;
-  width: 147px;
-  height: 39px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  color: #a6a6a6;
-}
+  .pedido > h3 {
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    color: #333333;
+  }
 
-.pedido > h4 {
-  margin-left: 10px;
-  height: 19px;
-  width: 66px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-}
+  .pedido > p {
+    margin-left: 10px;
+    margin-top: 4px;
+    width: 147px;
+    height: 39px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #a6a6a6;
+  }
 
-.escolhas {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  width: 100%;
-}
+  .pedido > h4 {
+    margin-left: 10px;
+    height: 19px;
+    width: 66px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
 
-.escolhas > h1 {
-  margin-top: 40px;
-}
+  .escondido {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25),
+      inset 0px 0px 0px 5px #32b72f;
+  }
 
-.barraInf {
-  width: 100%;
-  height: 92px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
+  .escolhas {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
 
-.barraInf div {
-  width: 90%;
-  height: 61px;
-  background-color: #cbcbcb;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .escolhas > h1 {
+    margin-top: 50px;
+  }
 
-.barraInf div p {
-  text-align: center;
-  color: #ffffff;
-  width: 200px;
-  height: 53px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.018em;
+  .escolhas > h2 {
+    margin-top: 110px;
+  }
+
+  .barraInf {
+    width: 100%;
+    height: 92px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  .barraInf div {
+    width: 90%;
+    height: 61px;
+    background-color: #cbcbcb;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .barraInf div p {
+    text-align: center;
+    color: #ffffff;
+    width: 200px;
+    height: 53px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+  }
 }

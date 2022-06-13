@@ -211,20 +211,6 @@
     height: 19px;
   }
 
-  .icone1 {
-    position: absolute;
-    left: 140px;
-    top: 180px;
-    z-index: 1;
-  }
-
-  .icone2 {
-    position: absolute;
-    left: 335px;
-    top: 180px;
-    z-index: 1;
-  }
-
   .cor {
     color: #32b72f;
   }

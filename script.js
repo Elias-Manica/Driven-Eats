@@ -13,6 +13,7 @@ let nomeBebida;
 let precoBebida;
 let nomeSobremesa;
 let precoSobremesa;
+let frase;
 
 function botaoSelecionado(elemento) {
   selecionarComida = elemento.innerHTML;
@@ -28,6 +29,7 @@ function botaoSelecionado(elemento) {
   elemento.classList.add("escondido");
   elemento.classList.add("cor");
   elemento.classList.remove("branco");
+  selecionarPedido();
 }
 
 function botaoSelecionadoBebida(elemento) {
@@ -70,42 +72,44 @@ function selecionarPedido() {
   if (selecionarComida && selecionarBebida && selecionarSobremesa) {
     fecharPedido = document.querySelector(".fecharPedido");
     fecharPedido.classList.add("fundoVerde");
-    let frase = document.querySelector(".fraseBotao");
+    frase = document.querySelector(".fraseBotao");
     frase.innerHTML = "Fechar pedido";
   }
 }
 
 function encaminharPedido(elemento) {
-  precoComida =
-    precoComida[precoComida.length - 5] +
-    precoComida[precoComida.length - 4] +
-    "." +
-    precoComida[precoComida.length - 2] +
-    precoComida[precoComida.length - 1];
+  if (frase.innerHTML === "Fechar pedido") {
+    precoComida =
+      precoComida[precoComida.length - 5] +
+      precoComida[precoComida.length - 4] +
+      "." +
+      precoComida[precoComida.length - 2] +
+      precoComida[precoComida.length - 1];
 
-  precoBebida =
-    precoBebida[precoBebida.length - 5] +
-    precoBebida[precoBebida.length - 4] +
-    "." +
-    precoBebida[precoBebida.length - 2] +
-    precoBebida[precoBebida.length - 1];
+    precoBebida =
+      precoBebida[precoBebida.length - 5] +
+      precoBebida[precoBebida.length - 4] +
+      "." +
+      precoBebida[precoBebida.length - 2] +
+      precoBebida[precoBebida.length - 1];
 
-  precoSobremesa =
-    precoSobremesa[precoSobremesa.length - 5] +
-    precoSobremesa[precoSobremesa.length - 4] +
-    "." +
-    precoSobremesa[precoSobremesa.length - 2] +
-    precoSobremesa[precoSobremesa.length - 1];
+    precoSobremesa =
+      precoSobremesa[precoSobremesa.length - 5] +
+      precoSobremesa[precoSobremesa.length - 4] +
+      "." +
+      precoSobremesa[precoSobremesa.length - 2] +
+      precoSobremesa[precoSobremesa.length - 1];
 
-  let valorTotal =
-    Number(precoComida) + Number(precoBebida) + Number(precoSobremesa);
+    let valorTotal =
+      Number(precoComida) + Number(precoBebida) + Number(precoSobremesa);
 
-  msg = `Olá, gostaria de fazer o pedido:
+    msg = `Olá, gostaria de fazer o pedido:
   - Prato: ${nomeComida}
   - Bebida: ${nomeBebida}
   - Sobremesa: ${nomeSobremesa}
 Total: R$ ${valorTotal.toFixed(2)}`;
 
-  message = `https://wa.me/5521980279273?text=${encodeURIComponent(msg)}`;
-  open(message);
+    message = `https://wa.me/5521980279273?text=${encodeURIComponent(msg)}`;
+    open(message);
+  }
 }

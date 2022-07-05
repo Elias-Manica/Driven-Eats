@@ -79,6 +79,11 @@ function selecionarPedido() {
 
 function encaminharPedido(elemento) {
   if (frase.innerHTML === "Fechar pedido") {
+    let todaTela = document.querySelector(".confirmacaoPedido");
+    todaTela.classList.remove("oculto");
+    let layout = document.querySelector(".layoutConfirmar");
+    layout.classList.remove("oculto");
+
     precoComida =
       precoComida[precoComida.length - 5] +
       precoComida[precoComida.length - 4] +
@@ -103,13 +108,32 @@ function encaminharPedido(elemento) {
     let valorTotal =
       Number(precoComida) + Number(precoBebida) + Number(precoSobremesa);
 
-    msg = `Olá, gostaria de fazer o pedido:
+    layout.children[1].children[0].innerHTML = nomeComida;
+    layout.children[1].children[1].innerHTML = precoComida;
+    layout.children[2].children[0].innerHTML = nomeBebida;
+    layout.children[2].children[1].innerHTML = precoBebida;
+    layout.children[3].children[0].innerHTML = nomeSobremesa;
+    layout.children[3].children[1].innerHTML = precoSobremesa;
+    layout.children[4].children[1].innerHTML = `R$ ${valorTotal.toFixed(2)}`;
+  }
+}
+
+function pedidoWhatsapp() {
+  let valorTotal =
+    Number(precoComida) + Number(precoBebida) + Number(precoSobremesa);
+  msg = `Olá, gostaria de fazer o pedido:
   - Prato: ${nomeComida}
   - Bebida: ${nomeBebida}
   - Sobremesa: ${nomeSobremesa}
 Total: R$ ${valorTotal.toFixed(2)}`;
 
-    message = `https://wa.me/5521980279273?text=${encodeURIComponent(msg)}`;
-    open(message);
-  }
+  message = `https://wa.me/5521980279273?text=${encodeURIComponent(msg)}`;
+  open(message);
+}
+
+function cancelar() {
+  let todaTela = document.querySelector(".confirmacaoPedido");
+  todaTela.classList.add("oculto");
+  let layout = document.querySelector(".layoutConfirmar");
+  layout.classList.add("oculto");
 }
